@@ -1,0 +1,88 @@
+/*
+참고: postcss-env
+
+
+Matches 
+
+li:matches(:nth-child(even), .target) {
+    background-color: blue;
+}
+
+
+
+Not 
+
+li:not(.target) {
+background-color: yellow;
+}
+
+
+
+CSS Variables 
+
+:root {
+    --awesomeColor: #e743c3;
+}
+li:first-child a {
+    color: var(--awesomeColor);
+}
+
+
+Custom-selector 
+
+@custom-selector :--headers h1, h2, h3, h4, h5 ,h6;
+
+:--headers {
+    color: #8e44ad;
+}
+
+
+Custom-media & Media Query Ranges 
+
+@custom-media --ipad-size (450px <= width < 850px);
+
+@media(--ipad-size) {
+   body {
+       background-color: red;
+}
+}
+
+Color mod & Gray() & system-ui
+
+h1 {
+    color: #f1c40f
+}
+h1:hover {
+    color: color-mod(#f1c40f lightness(80%));
+}
+
+h2 {
+    color: gray(50)
+}
+
+h1 {
+    font-family: system-ui;
+}
+
+
+Nesting Rules
+
+main {
+    background-color: blue;
+
+    & section {
+        background-color: red;
+        width: 500px;
+        & li {
+            background-color: yellow;;
+            width: 400px;
+            & a {
+                color: black;
+                &:hover {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+*/
